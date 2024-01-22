@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Git & Github command</h1>
+    <div>
+      <h4>1) কম্পিউটারে গিট আছে কিনা সেটি চেক করা</h4>
+      <p>=> git -v / git --version</p>
+    </div>
+    <div>
+      <h4>2) কম্পিউটারে গিটহাবের সব কনফিগারেশনের তথ্য</h4>
+      <p>=> git config --list</p>
+    </div>
+    <div>
+      <h4>3) কম্পিউটারে গিটে userName & userEmail set করা</h4>
+      <p><strong>Global:</strong></p>
+      <p>=> git config --global user.name "username"<br>
+      => git config --global user.email "useremail"</p>
+      <p><strong>Local:</strong></p>
+      <p>=> git config --local user.name "username"<br>
+      => git config --local user.email "useremail"</p>
+    </div>
+    <div>
+      <h4>4) কম্পিউটারে গিটে userName & userEmail আছে কিনা সেটি চেক করা</h4>
+      <p>=> git config user.name<br>
+        => git config user.email</p>
+    </div>
+    <div>
+      <h4>5) Git & Github configuration</h4>
+      <p><strong>***Local Repository:</strong></p>
+      <p>=> git init<br>
+      => git add . / git add --all<br>
+      => git commit -m "commit message"<br>
+      => git status
+      </p>
+      <p><strong>***Remote Repository:</strong></p>
+      <p>=> git branch -M main<br>
+      => git remote add origin repositoryUlrLink<br>
+      => git push -u origin main
+      </p>
+      <p><strong>***আবার যদি Remote Repository তে ডাটা প্রেরণ করা হয়:</strong></p>
+      <p>=> git add .<br>
+        => git commit -m "commit message"<br>
+      => git push
+      </p>
+    </div>
+    
+    <div>
+      <h4>6) গিটে বর্তমান অবস্থা দেখার জন্য</h4>
+      <p>=> git status</p>
+    </div>
+    <div>
+      <h4>7) Commit দেখার জন্য</h4>
+      <p>=> git log / git log --oneline</p>
+    </div>
+    <div>
+      <h4>8) গিটহাব প্রজেক্ট Clone করে আনার জন্য</h4>
+      <p>=> git clone repositoryUlrLink</p>
+    </div>
+    <div>
+      <h4>9) গিটহাব প্রজেক্ট Clone করে আনলেও ফাইল Name Change করা</h4>
+      <p>=> git clone repositoryUlrLink filename</p>
+    </div>
+    <div>
+      <h4>10) গিটহাবে Branch Create করা</h4>
+      <p>=> git branch branchName / git checkout -b branchName</p>
+    </div>
+    <div>
+      <h4>11) গিটহাবে Branch দেখা</h4>
+      <p>=> git branch / git branch --list</p>
+    </div>
+    <div>
+      <h4>12) গিটহাবে Branch পরিবর্তন করতে চাইলে</h4>
+      <p>=> git switch branchName / git checkout branchName (যেই branch এ যেতে চাবো সেই branch নাম)</p>
+    </div>
+    <div>
+      <h4>13) গিটহাবে Branch Name পরিবর্তন করতে চাইলে</h4>
+      <p>=> আগে ওই branch এ থাকতে হবে<br>
+      => git branch -m newBranchName
+      </p>
+    </div>
+    <div>
+      <h4>14) গিটহাবে Branch delete করতে চাইলে</h4>
+      <p>=> git branch -d branchName</p>
+    </div>
+    <div>
+      <h4>15) গিটহাবে এক branch এর ডাটা অন্য branch এ আনতে চাইলে (Fetch / Pull)</h4>
+      <p><strong>***Category one:</strong></p>
+      <p>=> git switch branchName (যেই branch এর ডাটা আনব তার branch যাব এবং branch name তারটা হবে)</p>
+      <p>=> git merge branchName (যেই branch এ ডাটা আনব সেই branch name হবে)</p>
+      <p>=> npm update / npm install</p>
+      <p><strong>***Category two:</strong></p>
+      <p>=> git pull -u origin branchName (যেই branch এর ডাটা আনব তার branch name হবে)</p>
+      <p>=> npm update / npm install</p>
+    </div>
+    <div>
+      <h4>16) গিটহাবে Branch এ data push করতে চাইলে</h4>
+      <p>=> git add .<br>
+      => git commit -m "commit message"<br>
+      => git push -u origin branchName / git push
+      </p>
+    </div>
+    <div>
+      <h4>17) গিটহাব repository পরিবর্তন করে নতুন repository দিতে চাইলে</h4>
+      <p>=> git remote remove origin repositoryUlrLink<br>
+        => git remote -v<br>
+        => git remote add origin repositoryUlrLink
+      </p>
+    </div>
+    <div>
+      <h4>18) আগের stage এ ফিরত যেতে চাইলে </h4>
+      <p>=> git log / git log --oneline<br>
+        => git checkout commitNumberPast (আগের stage এ চলে আসবো)
+      </p>
+    </div>
+</body>
+</html>
